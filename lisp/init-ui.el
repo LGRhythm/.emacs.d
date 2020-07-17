@@ -30,4 +30,16 @@
 (global-linum-mode t)
 (setq linum-format "%4d")
 
+;; font sizes
+(global-set-key (kbd "s-=")
+                (lambda ()
+                  (interactive)
+                  (let ((old-face-attribute (face-attribute 'default :height)))
+                    (set-face-attribute 'default nil :height (+ old-face-attribute 10)))))
+(global-set-key (kbd "s--")
+                (lambda ()
+                  (interactive)
+                  (let ((old-face-attribute (face-attribute 'default :height)))
+                    (set-face-attribute 'default nil :height (- old-face-attribute 10)))))
+
 (provide 'init-ui)
