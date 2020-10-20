@@ -1,0 +1,10 @@
+auto-save-list
+.cache
+eclipse.jdt.ls
+elpa
+workspace
+
+.dap-breakpoints
+.lsp-session-v1
+projectile-bookmarks.eld
+recentf
